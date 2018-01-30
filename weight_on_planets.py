@@ -16,8 +16,8 @@ name = raw_input("What is the planet of interest? :")
 infile = open("planet_data.dat", "r")
 
 for line in infile:  #loop over each line in the code
-  temp = line.split(;)  #delimiter is the ; 
-  if temp[0] == name:   #if the first element of the line matches the name user wants
+  temp = line.split(;)  #delimiter is the ;, split each line like this
+  if temp[0] == name:   #if the first element of the line matches the name the user specified
     radius = temp[1]*1000   #set radius to the planet radius
     density = temp[2]*1000      #set density to the planet density
     break                   #stop looping because the planet and respective data was found
