@@ -4,3 +4,5 @@ import math as ma
 
 
 infile = open("planet_data.dat", "r")
+for i in infile:
+  print i
