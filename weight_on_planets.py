@@ -1,9 +1,12 @@
-# This is a comment.  Python will ignore these lines (starting with #) when running
+# Eric Miller
+#1-30-2018
+#This file takes information from file: planet_data.dat. Given a mass and altitiude of an explorer on a specified planet, it returns 
+# the weight and graviational acceleration of that explorer.
 
 import math as ma
 
-float density
-float radius
+density = 0.0
+radius =0.0
 G=6.674*(10**(-11))
 
 mass = input("What is the mass of the explorer? :")
