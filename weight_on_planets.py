@@ -20,4 +20,6 @@ for line in infile:  #loop over each line in the code
     break                   #stop looping because the planet and respective data was found
  
 
-accel = (4/3)*ma.pi
+accel = (4/3)*ma.pi*6.674*(10**(-11))*radius*density
+
+print "The explorer's weight is", accel*mass, "N"
