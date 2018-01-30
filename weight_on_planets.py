@@ -4,7 +4,7 @@ import math as ma
 
 float density
 float radius
-
+G=6.674*(10**(-11))
 
 mass = input("What is the mass of the explorer? :")
 alt = input("What is the altitude of the explorer? :")
@@ -20,6 +20,8 @@ for line in infile:  #loop over each line in the code
     break                   #stop looping because the planet and respective data was found
  
 
-accel = (4/3)*ma.pi*6.674*(10**(-11))*radius*density
+accel = (4/3)*(ma.pi)*G*radius*density
 
-print "The explorer's weight is", accel*mass, "N"
+print "The explorer's weight is", accel*mass, "N. The gravitational acceleration is", accel/9.8 , "g's"
+
+infile.close()
