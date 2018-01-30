@@ -2,8 +2,13 @@
 
 import math as ma
 
+mass = input("What is the mass of the explorer? :")
+alt = input("What is the altitude of the explorer? :")
+name = raw_input("What is the planet of interest? :")
 
 infile = open("planet_data.dat", "r")
-for i in infile:
-  temp=i.split()
+
+for line in infile:
+  if line.split(;)[0]
+  
   
