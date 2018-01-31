@@ -24,8 +24,8 @@ for line in infile:  #loop over each line in the code
 
 accel = (4.0/3)*(ma.pi)*G*(radius**3)*density/((alt+radius)**2)*1000
 
-weight = accel * mass
-gs = accel / 9.80665
+weight = round(accel * mass, 3)
+gs = round(accel / 9.80665, 3)
 
 print "The explorer's weight is", weight, "N. The gravitational acceleration is", gs , "g's"
 
